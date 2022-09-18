@@ -20,10 +20,11 @@ const ContactBar = ({theme}) => {
 
   return (
     <div className={styles.container}>
+        <a href="Resume.pdf" download className={styles.downloadResume}><FaFileDownload size={30} className={styles.contact}/></a>
         <a target="_blank" rel="noreferrer" href="https://www.linkedin.com/in/btbrian/"><FaLinkedin size={30} className={styles.contact}/></a> 
         <a target="_blank" rel="noreferrer" href="https://github.com/ehclipse"> <FaGithub size={30} className={styles.contact} /> </a>
         <span onClick={() => emailCopyClipboard()} className={styles.email}><MdEmail size={30} className={styles.contact} /></span>
-       {/* <a href="public\downloadFiles\Resume.pdf" download><FaFileDownload size={30} className={styles.contact}/></a> */}
+      
  
     </div>
   )
