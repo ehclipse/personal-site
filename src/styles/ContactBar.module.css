@@ -1,0 +1,28 @@
+.contact{
+    padding-right: 10px;
+    text-decoration: none;
+}
+
+.contact:hover{
+    color: rgb(193, 193, 193) !important;
+    transition: color 0.25s ease-out;
+}
+
+a{
+    text-decoration: none;
+}
+
+.email:hover{
+    cursor: pointer;
+}
+
+/*
+.email::before{
+    content: "Copied";
+    position: absolute;
+    transform: translate(0px, 30px);
+    background-color: #5c81dc;
+    padding: 8px 10px;
+    border-radius: 20px;
+    font-size: 15px;
+}*/

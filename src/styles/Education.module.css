@@ -1,0 +1,155 @@
+/* 1rem = 16px // Better to use for fontsize
+    1em = same font size as parent
+
+    IDEA: HAVE DIFFERENT IMAGE FOR LIGHTMODE VS DARKMODE ***
+*/
+.bg{
+    background: url('../images/comet_bg.jpg');
+    background-size: cover;
+    background-position: 50% 50%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    min-height: 100vh;
+    width: 100vw;
+   
+}
+
+.container{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+
+    margin: 0 5em;
+
+
+  
+    justify-content: center;
+    
+      
+    padding: 50px 0;
+
+    background-color: rgba(255, 255, 255, 0.1);  
+    backdrop-filter: blur(5px);
+    border-radius: 25px;
+
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
+ 
+
+.container h1{
+    margin-left: 50px;
+    color: white;
+}
+
+.container h3{
+    color: rgb(196, 191, 191);
+}
+
+
+.university h2{
+    color: white;
+    
+}
+.university h2 span{
+    color: #e87500;
+}
+
+.uniItem{
+    line-height: 35px;
+    padding: 0 50px;
+}
+
+.row{
+    display: flex;
+    justify-content: space-between;
+}
+
+.row h2{
+    padding-right: 20px;
+}
+
+ 
+
+.row p{
+    color: rgb(196, 191, 191);
+    margin-right: 0px;
+ 
+}
+
+@media screen and (max-width: 768px) {
+
+    .container{
+        margin: 0 2em;
+    }
+
+    .bg h3{
+        font-size: 1rem;
+    }
+
+    .bg h2{
+        font-size: 1.1rem;
+    }
+
+    .bg h1{
+        font-size: 1.5rem;
+    }
+
+    .bg p{
+        font-size: 0.8rem;
+    }
+
+    .uniItem{
+        line-height: 2em;
+    }
+}
+
+
+@media screen and (max-width: 320px) {
+
+    .row{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .row h2{
+        margin-bottom: 2px;
+    }
+
+    .row h3{
+        margin-bottom: 2px;
+    }
+
+    .row p{
+        margin-top: 0px;
+    }
+
+    .container{
+      width: 300px;
+    }
+
+    .bg h3{
+        font-size: 0.8rem;
+    }
+
+    .bg h2{
+        font-size: 0.9rem;
+    }
+
+    .bg h1{
+        font-size: 1.5rem;
+    }
+
+    .bg p{
+        font-size: 0.7rem;
+    }
+
+    .uniItem{
+        line-height: 2rem;
+    }
+
+    .bg{
+        align-items: center;
+    }
+}

@@ -1,0 +1,74 @@
+.container{
+   /* color: white;*/
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    background: url('../images/gradientLaptopBG.jpg');
+    background-size: cover;
+    background-position: 50%, 50%;
+
+    color: white; /*Keep text white even in light mode*/
+}
+
+.container h1{
+    font-size: 3rem;
+}
+
+.container h1{
+    margin-top: 100px;
+}
+
+
+.skills{
+    display: flex;
+    flex-wrap: wrap;
+    min-height: 50vh;
+    width: 75vw;
+    justify-content: space-evenly;
+}
+
+
+@media screen and (max-width: 768px) {
+
+    .skills::-webkit-scrollbar{
+        width: 10px;
+        height: 10px;
+    }
+
+    .skills::-webkit-scrollbar-thumb{
+        border-radius: 10px;
+        background-color: rgba(255, 255, 255, 0.1);  
+        backdrop-filter: blur(75px);
+        padding: 50px;
+
+        box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+    }
+
+    .skills::-webkit-scrollbar-track{
+        background: transparent;
+    }
+     
+    .skills{
+        flex-wrap: nowrap;
+        width: 18.5rem;
+        
+        overflow-y: hidden;
+        justify-content: flex-start;
+        scroll-snap-type: x mandatory; 
+        display: flex;
+        overflow-x: auto;
+    }
+
+    .skills > div {
+        scroll-behavior: smooth;
+        flex-shrink: 0;
+        -webkit-overflow-scrolling: touch;
+
+        scroll-snap-align: start;
+    }
+
+}
+
+ 
