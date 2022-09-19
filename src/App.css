@@ -2,6 +2,7 @@
 body{
     color: var(--text-primary);
     background-color: var(--background);
+    letter-spacing: 1px;
     transition: background-color 0.2s ease-in;
 }
 
