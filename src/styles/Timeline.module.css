@@ -52,6 +52,19 @@
 }
 
 
+
+.timelineContent p a{
+    user-select: text;
+    -moz-user-select: text;
+    -khtml-user-select: text;
+    -webkit-user-select: text;
+    -o-user-select: text;  
+}
+
+.timelineContent p a span:hover{
+    color: rgb(192, 192, 192);
+}
+
 .timelineContent .date{
     font-size: 12px;
     font-weight: 300;
@@ -119,4 +132,17 @@
         position: absolute;
         top: -20px;
     }
+}
+
+.green{
+    color: rgb(137, 255, 137);
+}
+
+
+.blue{
+    color:rgb(123, 169, 255);
+}
+
+.yellow{
+    color: rgb(252, 252, 145);
 }
