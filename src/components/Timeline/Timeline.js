@@ -34,7 +34,7 @@ const Timeline = () => {
                         While working on this project, I gained a better understanding of <span className={styles.yellow}>ElectronJS</span>, <span className={styles.yellow}>ExpressJS</span>, and <span className={styles.yellow}>MongoDB</span>.
                         <br/>
                         <br/>
-
+                        
                         <a target="_blank" rel="noreferrer" href="https://github.com/ehclipse/dashboard"><span className={styles.blue}>Project Repository</span></a>
                     </p>
                 </div>
